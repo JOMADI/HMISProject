@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" stylesheets="@employeesStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PayrollController">
+    <JFXTextField fx:id="payrollSearch" layoutX="686.0" layoutY="758.0" prefHeight="30.0" prefWidth="300.0" promptText="search..." AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <padding>
+          <Insets left="10.0" />
+        </padding>
+    </JFXTextField>
+    <JFXTreeTableView fx:id="payrollTreeView" layoutX="10.0" layoutY="108.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0" />
+    <Label graphicTextGap="30.0" layoutX="10.0" layoutY="14.0" text="PAYROLL">
+        <font>
+          <Font size="50.0" />
+        </font>
+        <padding>
+          <Insets left="40.0" />
+        </padding>
+        <graphic>
+          <FontIcon iconLiteral="mdi-square-inc-cash" />
+        </graphic>
+    </Label>
+    <Label layoutX="592.0" layoutY="763.0" text="Search" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="314.0">
+        <graphic>
+          <FontIcon iconLiteral="mdi-account-search" iconSize="20" />
+        </graphic>
+        <font>
+          <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+</AnchorPane>

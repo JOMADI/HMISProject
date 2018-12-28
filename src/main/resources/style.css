@@ -1,0 +1,49 @@
+
+#titleAnchor, #drawer{
+    -fx-background-color:#c6c6c6;
+}
+
+#bodyAnchor{
+    -fx-background-color:#ffffff;
+}
+.jfx-button{
+    -fx-text-fill:grey;
+    -fx-background-radius: 30;
+}
+
+.label{
+    -fx-text-fill: grey;
+}
+
+#hamburger:focused{
+    -fx-background-color:transparent;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.jfx-button:hover{
+    -fx-background-color:#5b5b5b;
+    -fx-background-radius: 30;
+}
+
+.jfx-button:pressed{
+    -fx-background-color:#afafaf;
+}
+
+.jfx-button:focused{
+    -fx-background-color:#afafaf;
+}
+
+.ikonli-font-icon{
+    -fx-icon-color:grey;
+}
+
+#loggedIn{
+    -fx-icon-color:#00ff2a;
+}
+.jfx-toggle-button{
+    -jfx-toggle-color:grey;
+    -jfx-untoggle-color:#fafafa;
+    -jfx-toggle-line-color:#aeaeae;
+    -jfx-untoggle-line-color:#999999;
+}
+

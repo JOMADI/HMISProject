@@ -1,0 +1,116 @@
+{
+    -fx-primary-color:#007cff;
+    -fx-secondary-color: #ffffff;
+    -fx-hover-color:#aad3ff;
+    -fx-selected-color:#cce4ff;
+}
+
+#anchorPane{
+    -fx-background-radius: 20;
+    -fx-background-color: -fx-secondary-color;
+    -fx-border-color: -fx-primary-color;
+    -jfx-button-type:RAISED;
+}
+
+#borderPane{
+    -fx-background-color: -fx-primary-color;
+}
+
+#headerItems{
+    -fx-text-fill: -fx-secondary-color;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+/** SnackBar styling**/
+.jfx-snackbar-content{
+    -fx-background-color: #000000;
+    -fx-pref-width:350;
+    -fx-pref-height:40;
+    -fx-border-radius:20px;
+    -fx-background-radius:20px;
+}
+
+.jfx-snackbar.toast{
+    -fx-text-fill: -fx-secondary-color;
+    -fx-font-size:20px;
+}
+
+.jfx-snackbar.action{
+    -fx-text-fill: -fx-secondary-color;
+    -fx-font-size: 20px;
+    -jfx-button-type:FLAT;
+}
+
+.combo-box{
+    -fx-border-width: 0.5px;
+    -fx-border-color:#acacac;
+    -fx-border-radius:50px;
+    -fx-background-radius:50px;
+    -fx-font-size:15px;
+    -fx-padding: 0px;
+}
+
+.combo-box:hover{
+    -fx-text-fill: -fx-secondary-color;
+}
+
+.combo-box-base:hover{
+    -fx-border-color: -fx-primary-color;
+}
+
+
+.jfx-button{
+     -fx-border-radius: 20;
+     -fx-background-radius:20;
+     -fx-background-color:-fx-secondary-color;
+     -fx-text-fill:-fx-primary-color;
+     -jfx-button-type:RAISED;
+     -fx-border-color:-fx-primary-color;
+}
+
+.jfx-button:hover{
+    -fx-cursor:hand;
+    -fx-padding: 6;
+}
+
+.jfx-text-field{
+    -jfx-focus-color: -fx-primary-color;
+    -jfx-unfocus-color: #4d4d4d;
+    -jfx-label-float: false;
+    -jfx-disable-animation: false;
+}
+
+.ikonli-font-icon{
+    -fx-icon-color: -fx-primary-color;
+}
+
+.label{
+    -fx-text-fill: -fx-primary-color;
+}
+
+/*Date picker styling */
+.jfx-date-picker{
+    -jfx-default-color: -fx-primary-color;
+}
+
+/*Combo Box styling */
+.jfx-combo-box{
+    -jfx-focus-color: -fx-secondary-color;
+    -jfx-unfocus-color: -fx-secondary-color;
+}
+
+/*text area styling */
+.jfx-text-area{
+    -jfx-focus-color: -fx-primary-color;
+    -jfx-unfocus-color: #4d4d4d;
+}
+
+/*radio button styling */
+.jfx-radio-button{
+    -fx-text-fill: -fx-primary-color;
+    -jfx-selected-color: -fx-primary-color;
+    /*-jfx-unselected-color: #dddddd;*/
+
+}
+

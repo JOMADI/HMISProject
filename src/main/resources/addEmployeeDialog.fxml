@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane id="anchorPane" fx:id="addEmployee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1120.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px;" stylesheets="@addEmployeeStyle.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddEmployee">
+   <Label alignment="CENTER" graphicTextGap="20.0" layoutX="5.0" layoutY="8.0" text="ADD EMPLOYEE" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+      <font>
+         <Font size="26.0" />
+      </font>
+      <graphic>
+         <FontIcon iconLiteral="mdi-account-plus" iconSize="30" />
+      </graphic>
+   </Label>
+   <BorderPane id="borderPane" layoutX="31.0" layoutY="45.0" prefHeight="45.0" prefWidth="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+      <left>
+         <Label id="headerItems" text="Personal Information" BorderPane.alignment="CENTER">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+      </left>
+      <center>
+         <Label id="headerItems" text="Contact Information" BorderPane.alignment="CENTER" />
+      </center>
+      <right>
+         <Label id="headerItems" text="Employee Status" BorderPane.alignment="CENTER" />
+      </right>
+      <padding>
+         <Insets left="50.0" right="130.0" />
+      </padding>
+   </BorderPane>
+   <Label layoutX="15.0" layoutY="105.0" text="Title">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXComboBox fx:id="title" layoutX="138.0" layoutY="100.0" prefHeight="30.0" prefWidth="220.0" />
+   <Label layoutX="14.0" layoutY="146.0" text="First Name ">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="fName" layoutX="138.0" layoutY="146.0" prefWidth="220.0" />
+   <Label layoutX="14.0" layoutY="188.0" text="Middle Name ">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="mName" layoutX="138.0" layoutY="188.0" prefWidth="220.0" />
+   <Label layoutX="15.0" layoutY="232.0" text="Last Name ">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="lName" layoutX="137.0" layoutY="232.0" prefWidth="220.0" />
+   <Label disable="true" layoutX="15.0" layoutY="276.0" text="Employee ID">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextField disable="true" layoutX="137.0" layoutY="276.0" prefWidth="220.0" />
+   <Label layoutX="15.0" layoutY="327.0" text="Blood Group">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXComboBox fx:id="bGroup" layoutX="137.0" layoutY="322.0" prefHeight="30.0" prefWidth="220.0" />
+   <Label layoutX="17.0" layoutY="375.0" text="Birth Date">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXDatePicker fx:id="bDate" layoutX="136.0" layoutY="372.0" />
+   <Label layoutX="18.0" layoutY="425.0" text="Gender">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXComboBox fx:id="gender" layoutX="136.0" layoutY="420.0" prefHeight="30.0" prefWidth="220.0" />
+   <Label layoutX="15.0" layoutY="468.0" text="Nationality">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="nationality" layoutX="137.0" layoutY="468.0" prefWidth="220.0" />
+   <Label layoutX="18.0" layoutY="528.0" text="Address">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextArea fx:id="address" layoutX="136.0" layoutY="512.0" prefHeight="52.0" prefWidth="220.0" />
+   <Label layoutX="17.0" layoutY="583.0" text="State">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="state" layoutX="137.0" layoutY="583.0" prefWidth="220.0" />
+   <Label layoutX="15.0" layoutY="629.0" text="City">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Separator layoutX="364.0" layoutY="98.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="95.0" />
+   <JFXTextField fx:id="city" layoutX="136.0" layoutY="629.0" prefWidth="220.0" />
+   <Label layoutX="374.0" layoutY="149.0" text="Phone Number">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="phoneNum" layoutX="505.0" layoutY="150.0" prefWidth="220.0" />
+   <Label layoutX="377.0" layoutY="204.0" text="E-mail">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="email" layoutX="505.0" layoutY="201.0" prefWidth="220.0" />
+   <Separator layoutX="749.0" layoutY="103.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="95.0" />
+   <Label layoutX="762.0" layoutY="105.0" text="Status">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXRadioButton fx:id="active" layoutX="887.0" layoutY="107.0" prefHeight="16.0" prefWidth="0.0" text="Active" />
+   <JFXRadioButton fx:id="inactive" layoutX="971.0" layoutY="107.0" text="Inactive" />
+   <Label layoutX="768.0" layoutY="149.0" text="Supervisor">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="supervisor" layoutX="887.0" layoutY="153.0" prefWidth="220.0" />
+   <Label layoutX="762.0" layoutY="214.0" text="Department">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXComboBox fx:id="dept" layoutX="887.0" layoutY="210.0" prefWidth="220.0" />
+   <Label layoutX="762.0" layoutY="276.0" text="Marital Status">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="mStatus" layoutX="887.0" layoutY="273.0" prefWidth="220.0" />
+   <JFXButton fx:id="cancelButton" accessibleText="cancelButton" layoutX="1013.0" layoutY="640.0" prefHeight="40.0" prefWidth="75.0" text="CANCEL" />
+   <JFXButton fx:id="addButton" accessibleText="addButton" layoutX="919.0" layoutY="640.0" prefHeight="40.0" prefWidth="75.0" text="ADD" />
+   <ImageView fx:id="image" fitHeight="300.0" fitWidth="220.0" layoutX="505.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@profile.jpg" />
+   </ImageView>
+   <Label layoutX="377.0" layoutY="403.0" text="Profile Picture">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+</AnchorPane>

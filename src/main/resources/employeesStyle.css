@@ -1,0 +1,67 @@
+{
+    -fx-primary-color:#007cff;
+    -fx-secondary-color: #ffffff;
+    -fx-hover-color:#aad3ff;
+    -fx-selected-color:#cce4ff;
+}
+#anchorPane{
+    -fx-background-color:-fx-secondary-color;
+}
+
+.jfx-text-field{
+    -jfx-focus-color: -fx-primary-color;
+    -jfx-unfocus-color: #4d4d4d;
+    -jfx-label-float: false;
+    -jfx-disable-animation: false;
+}
+
+.tab{
+    -fx-background-color: -fx-primary-color;
+    -fx-pref-width:350;
+    -fx-pref-height:60;
+}
+.tab-header-background{
+    -fx-background-color: -fx-primary-color;
+}
+
+
+.jfx-tab-pane .tab-header-area .tab-selected-line {
+    -fx-background-color: -fx-secondary-color;
+}
+.jfx-tab-pane .tab-header-area .tab .jfx-rippler{
+    -jfx-rippler-fill: -fx-secondary-color;
+}
+.ikonli-font-icon{
+    -fx-icon-color: -fx-primary-color;
+}
+
+.label{
+    -fx-text-fill: -fx-primary-color;
+}
+
+
+/*setting color for table item when selected*/
+.tree-table-view:focused .tree-table-row-cell:selected {
+    -fx-background-color: -fx-selected-color;
+    -fx-table-cell-border-color: -fx-selected-color;
+    -fx-text-fill: BLACK;
+}
+
+.tree-table-view .table-column{
+    -fx-alignment: CENTER;
+}
+
+.jfx-button{
+     -fx-border-radius: 20;
+     -fx-background-radius:20;
+     -fx-background-color:-fx-secondary-color;
+     -fx-text-fill:-fx-primary-color;
+     -jfx-button-type:RAISED;
+     -fx-border-color:-fx-primary-color;
+}
+
+.jfx-button:hover{
+    -fx-cursor:hand;
+    -fx-padding: 6;
+}
+

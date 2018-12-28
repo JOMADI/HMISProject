@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<Pane id="anchorPane" prefHeight="730.0" prefWidth="400.0" stylesheets="@drawerContentStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <!-- <JFXButton id="menu" accessibleText="menu" graphicTextGap="20.0" layoutY="18.0" prefHeight="50.0" prefWidth="127.0" text="Menu">
+      <graphic>
+         <FontIcon iconLiteral="mdi-menu" iconSize="28" />
+      </graphic>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </JFXButton> -->
+   <ImageView id="profileImage" accessibleText="profile_picture" fitHeight="120.0" fitWidth="120.0" layoutX="140.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="85.0">
+      <Image url="@Folder.jpg" />
+   </ImageView>
+   <Label alignment="CENTER" layoutY="219.0" prefWidth="400.0" text="Victor Jo" textFill="GREY" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="219.0">
+      <graphic>
+         <FontIcon id="loggedInIcon" iconColor="#2cff3d" iconLiteral="mdi-check-circle" />
+      </graphic>
+   </Label>
+   <Separator layoutY="258.0" prefWidth="398.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="258.0">
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </Separator>
+   <JFXButton accessibleText="employee_details" alignment="BASELINE_LEFT" defaultButton="true" graphicTextGap="20.0" layoutY="275.0" prefHeight="50.0" prefWidth="400.0" text="Employee Details" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <graphic>
+         <FontIcon iconColor="GREY" iconLiteral="mdi-account-star" iconSize="28" text="" textAlignment="CENTER" />
+      </graphic>
+      <font>
+         <Font size="20.0" />
+      </font>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </JFXButton>
+   <JFXButton fx:id="employee" accessibleText="payroll" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="1.0" layoutY="325.0" prefHeight="50.0" prefWidth="400.0" text="Payroll" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+      <graphic>
+         <FontIcon iconColor="GREY" iconLiteral="mdi-square-inc-cash" iconSize="28" />
+      </graphic>
+      <font>
+         <Font size="20.0" />
+      </font>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </JFXButton>
+   <JFXButton accessibleText="training" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="1.0" layoutY="375.0" prefHeight="50.0" prefWidth="400.0" text="Training" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+      <graphic>
+         <FontIcon iconColor="GREY" iconLiteral="mdi-worker" iconSize="28" />
+      </graphic>
+      <font>
+         <Font size="20.0" />
+      </font>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </JFXButton>
+   <JFXButton accessibleText="performance" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="1.0" layoutY="425.0" prefHeight="50.0" prefWidth="400.0" text="Performance" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+      <graphic>
+         <FontIcon iconColor="GREY" iconLiteral="mdi-chart-line" iconSize="28" />
+      </graphic>
+      <font>
+         <Font size="20.0" />
+      </font>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </JFXButton>
+   <JFXButton accessibleText="resignation" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="1.0" layoutY="475.0" prefHeight="50.0" prefWidth="400.0" text="Resignation" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+      <graphic>
+         <FontIcon iconColor="GREY" iconLiteral="mdi-account-remove" iconSize="28" />
+      </graphic>
+      <font>
+         <Font size="20.0" />
+      </font>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </JFXButton>
+   <JFXButton accessibleText="resume_tracking" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="1.0" layoutY="525.0" prefHeight="50.0" prefWidth="400.0" text="Resume Tracking" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+      <graphic>
+         <FontIcon iconColor="GREY" iconLiteral="mdi-account-card-details" iconSize="28" />
+      </graphic>
+      <font>
+         <Font size="20.0" />
+      </font>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </JFXButton>
+   <JFXButton accessibleText="logout" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="1.0" layoutY="575.0" prefHeight="50.0" prefWidth="400.0" text="Logout" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+      <graphic>
+         <FontIcon iconColor="GREY" iconLiteral="mdi-logout" iconSize="28" />
+      </graphic>
+      <font>
+         <Font size="20.0" />
+      </font>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </JFXButton>
+   <JFXToggleButton fx:id="toggle" accessibleText="toggle" alignment="TOP_LEFT" layoutY="636.0" prefHeight="50.0" prefWidth="400.0" selected="true" text="Lights On" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="0.0">
+      <padding>
+         <Insets left="15.0" right="20.0" />
+      </padding></JFXToggleButton>
+</Pane>

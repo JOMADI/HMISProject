@@ -1,0 +1,54 @@
+#anchorPane{
+    -fx-background-color:#f7f7f7;
+}
+#menu:hover{
+    -fx-background-color:#aad3ff;
+    -fx-border-radius: 0;
+}
+
+.label{
+    -fx-text-fill: #007cff;
+}
+
+
+#menu{
+  -fx-background-color:#f7f7f7;
+  -jfx-button-type: FLAT;
+  -fx-border-radius: 0;
+}
+
+.jfx-button:hover{
+    -fx-padding: 6;
+    -fx-border-radius: 10;
+    -fx-background-radius:10;
+    -fx-background-color:#aad3ff;
+}
+
+.jfx-button:focused{
+    -fx-background-color:#cce4ff;
+    -jfx-button-type: RAISED;
+}
+
+.jfx-button{
+    -fx-border-radius: 5;
+    -fx-background-radius:5;
+    -fx-background-color:#f7f7f7;
+    -fx-text-fill:#007cff;
+}
+
+#loggedInIcon{
+    -fx-icon-color:#00b1ff;
+}
+.ikonli-font-icon{
+    -fx-icon-color:#007cff;
+}
+
+.jfx-toggle-button{
+    -fx-text-fill:#007cff;
+    -jfx-toggle-color:#ffffff;
+    -jfx-toggle-line-color:#007cff;
+    -jfx-untoggle-color: #ffffff;
+    -jfx-untoggle-line-color: #dddddd;
+    -jfx-disable-visual-focus: false;
+}
+
